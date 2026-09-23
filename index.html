@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniChat</title>
+    <link rel="stylesheet" href="style.css">
+    <src=script.js></src>
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="user-info">
+                    <img src="https://via.placeholder.com/40" alt="Profile" class="profile-pic">
+                    <span class="username">You</span>
+                </div>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search or start new chat" id="searchInput">
+            </div>
+            <div class="chat-list" id="chatList">
+            </div>
+        </div>
+
+        <div class="chat-area">
+            <div class="chat-header" id="chatHeader">
+                <img src="https://via.placeholder.com/40" alt="Contact" class="contact-pic">
+                <div class="contact-info">
+                    <span class="contact-name">Select a chat</span>
+                    <span class="contact-status">online</span>
+                </div>
+            </div>
+            
+            <div class="messages-container" id="messagesContainer">
+                <div class="welcome-message">
+                    <h2>Welcome to MiniChat</h2>
+                    <p>Select a contact to start messaging</p>
+                </div>
+            </div>
+            
+            <div class="message-input-container">
+                <input type="text" id="messageInput" placeholder="Type a message" disabled>
+                <button id="sendButton" disabled>
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
